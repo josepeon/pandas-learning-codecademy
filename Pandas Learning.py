@@ -117,3 +117,22 @@ print("\n--- Adding Column III ---\n")
 # Add a new column to the DataFrame
 df['Margin'] = df.Price - df['Cost to Manufacture']
 print(df)
+
+print("\n--- Performing Column Operations ---\n")
+# Perform operations on columns
+df["Lowercase Name"] = df.Name.apply(str.lower)
+print(df)
+
+print("\n--- Reviewing Lambda Function ---\n")
+mylambda = lambda string: string[0] + string[-1] if len(string) >= 2 else "Not longer than two characters"
+print("Lambda function example:")
+print(mylambda("Hello"))
+print(mylambda("A"))
+
+print("\n--- Reviewing Lambda Function: If Statements ---\n")
+mylambda = lambda age: "Welcome to BattleCity!" if age >= 13 else "You must be 13 or older"
+print("Lambda function with if statement:")
+print(mylambda(15))
+print(mylambda(10))
+
+
