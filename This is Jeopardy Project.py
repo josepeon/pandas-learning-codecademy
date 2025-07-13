@@ -23,3 +23,5 @@ def filter_by_words(df, words):
 filtered_df = filter_by_words(jeopardy, ["King", "England"])
 print(filtered_df.head())  # Display the first few rows of the filtered DataFrame
 
+#Continue exercises in the near future when Pandas knowledge has been consolidated
+# This is a placeholder for future exercises and learning tasks.
