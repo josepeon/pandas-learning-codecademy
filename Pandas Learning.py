@@ -135,4 +135,39 @@ print("Lambda function with if statement:")
 print(mylambda(15))
 print(mylambda(10))
 
+print("\n--- Summary Statistics ---")
+# Summary statistics
+
+# The following table summarizes some common commands:
+
+# Command	Description
+# mean	Average of all values in column
+# std	Standard deviation
+# median	Median
+# max	Maximum value in column
+# min	Minimum value in column
+# count	Number of values in column
+# nunique	Number of unique values in column
+# unique	List of unique values in column
+
+#Merge DataFrames
+print("\n--- Merging DataFrames ---")
+df1 = pd.DataFrame({
+    "Name": ["Alice", "Bob", "Charlie"],
+    "Age": [25, 30, 35]
+})
+df2 = pd.DataFrame({
+    "Name": ["Alice", "Bob", "David"],
+    "Salary": [70000, 80000, 60000]
+})
+merged_df = pd.merge(df1, df2, on="Name", how="outer")
+print("Merged DataFrame:")
+print(merged_df)            
+
+# --- End of Pandas Learning Script ---
+# Note: This script is designed to be run in a Python environment with Pandas installed.
+# It demonstrates basic Pandas operations and is part of the AI Engineer Path learning materials.
+# The script includes examples of Series, DataFrames, indexing, slicing, adding columns, renaming, deleting columns,
+# filtering, sorting, grouping, handling missing data, and merging DataFrames.
+# It also includes exercises from a Codecademy course on Pandas.
 
