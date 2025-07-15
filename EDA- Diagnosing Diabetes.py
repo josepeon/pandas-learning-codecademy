@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 # Load the dataset
 data = pd.read_csv('diabetes.csv')
@@ -27,3 +28,6 @@ print(data.Outcome.unique())
 data['Outcome'] = data['Outcome'].replace('O', 0).astype('int64')   
 # Display the unique values in the Outcome column
 print(data['Outcome'].unique())
+
+plt.hist(data['Glucose'], bins=30, edgecolor='black')
+plt.show()
